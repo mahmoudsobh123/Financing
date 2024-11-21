@@ -74,6 +74,23 @@ header {
         padding: 0;
         transform: translateY(0%) !important;
     }
+    .list-unstyled li {
+      position: relative;
+      padding-right: 20px; /* لإتاحة مساحة للسهم */
+    }
+    
+    .list-unstyled li::before {
+      content: "\003e"; /* الرمز Unicode لعلامة السهم > */
+      position: absolute;
+      right: 0; /* السهم بجانب النص */
+      color: rgb(211, 209, 209); /* لون السهم */
+      font-size: 16px; /* حجم السهم */
+      font-weight: bold;
+    }
+    .accordion-button:focus {
+      box-shadow: none !important; /* إزالة الظل عند التركيز */
+      outline: none !important; /* إزالة الإطار عند التركيز */
+    }
   }
 
   /* Header Content */
@@ -282,4 +299,32 @@ color: #000 !important;
   /* border-radius: 10px; */
   width: 25%;
   height: 60px;
+}
+
+/* ///////////////// */
+.accordion-button {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: end;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body ul {
+  padding-right: 15px;
+}
+
+.footer_link:hover {
+  color: gray; /* لون مميز عند التمرير */
+}
+
+.toggle-icon {
+  font-size: 20px;
+  font-weight: 700;
+  color: gray; /* لون السهم */
+}
+.accordion-button::after {
+  display: none !important; /* إخفاء السهم الافتراضي */
 }
