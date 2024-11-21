@@ -73,3 +73,19 @@ window.addEventListener("scroll", function () {
     // تحديث قيمة التمرير الأخيرة
     lastScrollTop = Math.max(scrollTop, 0); // تجنب القيم السالبة
 });
+//////////////////////////////////////////////////////////////////////
+// /////// footer
+// مثال: عند النقر على أي رابط داخل الفوتر، انتقل إلى القسم المطلوب بسلاسة
+// document.querySelectorAll(".footer a").forEach((link) => {
+//   link.addEventListener("click", (e) => {
+//     e.preventDefault(); // منع السلوك الافتراضي
+//     const targetId = e.target.getAttribute("href");
+//     document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+//   });
+// });
+
+// document.querySelectorAll('li').forEach(li => {
+//   li.addEventListener('click', e => {
+//       e.preventDefault(); // هذا يمنع الرابط من الفتح
+//   });
+// });
