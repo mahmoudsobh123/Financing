@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>نموذج التحقق من مستندات</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo-removebg-preview.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    <!-- رابط أعلى الصفحة -->
+    <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-none d-md-block" id="top-link">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://www.alrajhibank.com.sa/Personal/Financing-And-Savings-Products-For-Individuals" style="font-weight: 700; color: #0087F7 !important;">أسعار المنتجات التمويلية والادخارية</a>
+        </li>
+    </ul>
+
+    <!-- الشريط العلوي -->
+<header id="header" style="z-index: 10 !important;">
+    <nav class="navbar navbar-expand-md" style="padding: 0 !important;">
+        <div class="container-fluid">
+            <!-- زر التبديل للشاشات الصغيرة -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: transparent !important; border: 0 !important; outline: 0 !important;" id="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- شعار المصرف -->
+            <a class="navbar-brand m-md-0 ms-md-3 me-md-5 m-auto" href="https://www.alrajhibank.com.sa/">
+                <img src="images/logo.png" alt="شعار مصرف الراجحي" class="logo" style="height: 40px;">
+            </a>
+
+            <!-- تسجيل الدخول المصرف -->
+            <a class="button d-flex d-md-none" href="https://onlinebanking.alrajhibank.com.sa/OnlineBanking/" style="background-color: #00b2ff !important; border: none; border-radius: 20px; color: white; padding: 0px 15px 5px 15px; font-size: 20px;">
+                تسجيل الدخول
+            </a>
+
+            <!-- محتوى القائمة -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <form class="d-flex d-md-none my-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="ابحث" aria-label="Search">
+                </form>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.alrajhibank.com.sa/Personal" style="font-weight: 700; color: white !important;">الأفراد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.alrajhibank.com.sa/Business" style="color: rgb(182, 178, 178) !important;">الأعمال</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="https://www.alrajhibank.com.sa/Personal/Financing-And-Savings-Products-For-Individuals" style="color: rgb(182, 178, 178) !important;">أسعار المنتجات التمويلية والادخارية</a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a class="nav-link" href="#" style="color: rgb(182, 178, 178) !important;">English</a>
+                    </li>
+                </ul>
+                <div class="d-md-flex d-none align-items-center">
+                    <i class="fas fa-search me-3" style="font-size: 20px; color: #ffffff; cursor: pointer;"></i>
+                    <a href="#" class="btn btn-link me-3 ms-3" style="color: rgb(182, 178, 178) !important; text-decoration: none;">English</a>
+                    <a class="button" target="_blank" href="https://onlinebanking.alrajhibank.com.sa/OnlineBanking/" style="background-color: #00b2ff !important; border: none; color: white; padding: 10px 30px; height: 50px; margin-left: 60px;">
+                        تسجيل الدخول
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+    <main style="margin-top: 100px;">
+        <section class="d-md-flex d-none row m-0 justify-content-center align-items-center" style="direction: ltr !important; min-height: 100vh; text-align: center;">
+            <img class="col-md-5" src="images/img1.png" alt="files-picture" style="max-width: 100%; height: auto;">
+            <h2 class="col-md-6" style="font-weight: 600; font-size: 3.2rem !important; color: #0033a0;">نموذج التحقق من مستندات</h2>
+        </section>
+        
+        <section class="form-section container pt-md-0 pt-5">
+            <h2 style="font-size: 1.25em !important; color: #0033a0; font-weight: 600;">قم بتعبئة البيانات التالية</h2>
+            <hr>
+            <form id="requestForm">
+                <div class="d-flex justify-content-between row m-0">
+                    <div class="form-group col-md-6 col-11">
+                        <label for="idNumber">رقم الهوية الوطنية أو الإقامة أو رقم المنشأة</label>
+                        <input type="text" id="idNumber" name="idNumber" placeholder="برجاء أدخال رقم الهوية الوطنية أو الإقامة أو رقم المنشأة" required>
+                    </div>
+                    <div class="form-group col-md-6 col-11">
+                        <label for="number2">الرقم التسلسلي</label>
+                        <input type="text" id="number2" name="number2" placeholder="برجاء أدخال الرقم التسلسلي" required>
+                    </div>
+                </div>
+                <hr>
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <button type="submit" class="btn2 btn btn-primary btn-md button-alrajhi-primary" style="background-color: rgb(4, 105, 199);">
+                        التحقق من صحة الوثائق
+                    </button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2024 مصرف الراجحي. جميع الحقوق محفوظة.</p>
+    </footer> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

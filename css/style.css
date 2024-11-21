@@ -1,0 +1,186 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  direction: rtl;
+}
+.button{
+    text-decoration: none !important;
+}
+
+/* Header Button */
+/* تغيير لون شريط التمرير بشكل عام */
+::-webkit-scrollbar {
+    width: 8px; /* عرض شريط التمرير */
+    height: 0px !important;
+}
+
+/* تغيير لون شريط التمرير */
+::-webkit-scrollbar-thumb {
+    background-color: #221bff; /* اللون الأساسي للتمرير */
+    border-radius: 20px;
+}
+
+/* تغيير لون خلفية شريط التمرير */
+::-webkit-scrollbar-track {
+    background-color: #c9c6c6; /* لون خلفية الشريط */
+    border-radius: 20px;
+}
+
+/* link above header */
+header {
+    background-color: #221bff;
+    color: white;
+    padding: 0px 40px;
+    position: fixed !important;
+    width: 100%;
+    top: 40px;
+    top: 40px;
+    left: 0;
+    transition: top 0.3s; /* إضافة تأثير الانتقال للموقع */
+  }
+
+  #top-link {
+    transition: opacity 0.3s ease-in-out; /* تأكيد الانتقال السلس */
+}
+
+.hide-header {
+    position: relative; /* إذا كان top غير كافٍ */
+    top: -50px; /* قد تحتاج إلى ضبط القيمة */
+}
+
+.hide-link {
+    opacity: 0; /* للإخفاء */
+    pointer-events: none; /* لمنع النقر على الرابط */
+}
+
+  @media(max-width : 767px){
+    header{
+        top: 0px;
+        padding: 0;
+    }
+  }
+
+  /* Header Content */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 25px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: rgb(182, 178, 178);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: white !important;
+}
+
+/* .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+} */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    transition: transform 0.5s ease; /* إضافة تأثير الحركة */
+}
+
+.navbar-toggler-icon.change {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M6 24L24 6'/%3e%3c/svg%3e") !important;
+}
+
+/* تأثير الدوران */
+.navbar-toggler-icon.rotate {
+    transform: rotate(90deg);
+}
+
+.navbar-toggler:focus {
+    display: none !important;
+}
+
+.form-section {
+  padding: 20px;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #0033a0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  border-radius: 1.875em;
+  background-color: white;
+  padding: 0.5em 2em;
+  height: 3.625em;
+  border: 1px solid rgb(189, 189, 189);
+  outline: 0;
+  color: rgb(77, 76, 76);
+  font-size: 17px;
+}
+.form-group input:focus {
+  border: 1px solid #0033a0 !important;
+  outline: 0;
+}
+.form-group input::placeholder {
+  color: rgb(107, 105, 105) !important;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.btn2 {
+  background-color: #03a2e6 !important;
+  color: white;
+  border: none !important;
+  cursor: pointer;
+  border-radius: 1.875em !important;
+  padding: 0.85625em 1.1em !important;
+  font-size: 0.875rem !important;
+}
+
+.btn2:hover {
+  background-color: rgba(9, 235, 216, 0.521) !important;
+  color: black !important;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0033a0;
+  color: white;
+  bottom: 0;
+  width: 100%;
+}
+
