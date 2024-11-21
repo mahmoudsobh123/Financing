@@ -33,22 +33,43 @@ navbarToggler.addEventListener("click", function () {
 });
 
 
-//////// Hide link above header /////////////
-let lastScrollTop = 0;
+// //////// Hide link above header /////////////
+// let lastScrollTop = 0;
+// const header = document.getElementById("header");
+// const topLink = document.getElementById("top-link");
+
+// window.addEventListener("scroll", function () {
+//   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+//   if (scrollTop > lastScrollTop) {
+//     // إذا كان التمرير لأسفل
+//     header.classList.add("hide-header"); // نقل الـ header إلى الأعلى
+//     topLink.classList.add("hide-link"); // إخفاء الرابط
+//   } else {
+//     // إذا كان التمرير لأعلى
+//     header.classList.remove("hide-header"); // إعادة الـ header
+//     topLink.classList.remove("hide-link"); // إظهار الرابط
+//   }
+//   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // لتجنب السلبية
+// });
+
+let lastScrollTop = 0; // تخزين آخر موضع للتمرير
 const header = document.getElementById("header");
 const topLink = document.getElementById("top-link");
 
 window.addEventListener("scroll", function () {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > lastScrollTop) {
-    // إذا كان التمرير لأسفل
-    header.classList.add("hide-header"); // نقل الـ header إلى الأعلى
-    topLink.classList.add("hide-link"); // إخفاء الرابط
-  } else {
-    // إذا كان التمرير لأعلى
-    header.classList.remove("hide-header"); // إعادة الـ header
-    topLink.classList.remove("hide-link"); // إظهار الرابط
-  }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // لتجنب السلبية
+    if (scrollTop > lastScrollTop) {
+        // عند التمرير لأسفل
+        header.classList.add("hide-header");
+        topLink.classList.add("hide-link");
+    } else {
+        // عند التمرير لأعلى
+        header.classList.remove("hide-header");
+        topLink.classList.remove("hide-link");
+    }
+
+    // تحديث قيمة التمرير الأخيرة
+    lastScrollTop = Math.max(scrollTop, 0); // تجنب القيم السالبة
 });
