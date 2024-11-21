@@ -7,6 +7,8 @@
     <link rel="icon" type="image/x-icon" href="images/logo-removebg-preview.png">
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +45,7 @@
             </a>
 
             <!-- تسجيل الدخول المصرف -->
-            <a class="button d-flex d-md-none" href="https://onlinebanking.alrajhibank.com.sa/OnlineBanking/" style="background-color: #00b2ff !important; border: none; border-radius: 20px; color: white; padding: 0px 15px 5px 15px; font-size: 20px;">
+            <a class="button d-flex d-md-none" href="https://onlinebanking.alrajhibank.com.sa/OnlineBanking/" style="background-color: #00b2ff !important; border: none; border-radius: 20px; color: white; padding: 0px 10px 5px 10px; font-size: 20px; margin-right: -20px !important;">
                 تسجيل الدخول
             </a>
 
@@ -86,7 +88,7 @@
         </section>
         
         <section class="form-section container pt-md-0 pt-5">
-            <h2 style="font-size: 1.25em !important; color: #0033a0; font-weight: 600;">قم بتعبئة البيانات التالية</h2>
+            <h2 class="mb-md-0 mb-4" style="font-size: 1.25em !important; color: #0033a0; font-weight: 600;">قم بتعبئة البيانات التالية</h2>
             <hr>
             <form id="requestForm">
                 <div class="d-flex justify-content-between row m-0">
@@ -109,6 +111,16 @@
             </form>
             <p class="ms-auto download" style="color: #0087f7; cursor: pointer; font-size: 18px;"></p>
         </section>
+        <style>
+            /* توسيط الأيقونات الاجتماعية في الشاشات الصغيرة */
+            @media (max-width: 768px) {
+                .form-group input::placeholder {
+                color: rgb(107, 105, 105) !important;
+                font-weight: 400;
+                font-size: 13px;
+              }
+            }
+          </style>
         
     </main>
 
@@ -184,20 +196,30 @@
 
           <!-- ////////// first row in small ////////////// -->
           <div class="row d-md-none d-block">
-            <!-- margin-top: -20px !important; -->
-            <div class="text-end d-flex" style=" padding-right: 55px;">
+            
+            <div class="text-end d-flex info" style=" padding-right: 55px; ">
                 <img src="images/logo.png" class="mt-1" height="22" width="22">
                 <p class="me-2" style="color: rgb(214, 214, 214) ; font-size: 20px; font-weight: 100;"> > </p>
                 <p class="me-2 ms-2" style="margin-top: 4px !important;"><a href="https://www.alrajhibank.com.sa/Personal" class="footer_link" style="color: rgb(214, 214, 214) ; font-size: 15px; font-weight: 400;">الأفراد</a></p>
                 <p class="me-2" style="color: rgb(214, 214, 214) ; font-size: 20px; font-weight: 100;"> > </p>
                 <p class="me-2 ms-2" style="margin-top: 4px !important;"><a href="https://www.alrajhibank.com.sa/Personal/Finance" class="footer_link" style="color: rgb(214, 214, 214); font-size: 15px; font-weight: 400;">التمويل</a></p>
             </div>
-          
+
+            <style>
+                /* توسيط الأيقونات الاجتماعية في الشاشات الصغيرة */
+                @media (max-width: 768px) {
+                    .info {
+                    margin-top: -25px !important;
+                    padding-right: 35px !important;
+                  }
+                }
+              </style>
+
             <div class="accordion mb-5" id="footerAccordion">
                 <!-- قسم "الأفراد" -->
                 <div class="accordion-item border-0" style="background-color: transparent !important; outline: 0 !important;">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#personalSection" aria-expanded="false" aria-controls="personalSection" style="color: rgb(150, 150, 150) !important;">
+                    <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#personalSection" aria-expanded="false" aria-controls="personalSection" style="color: rgb(248, 248, 248) !important; font-weight: 600;">
                         الأفراد <span class="toggle-icon me-auto">+</span>
                     </button>
                     <hr style="color: #fff !important; margin-top: 5px !important;" >
@@ -254,7 +276,6 @@
                     </div>
                   </div>
                 </div>
-              
               
               <!-- قسم "عن الدعم والمساعدة" -->
               <div class="accordion-item border-0" style="background-color: transparent !important; outline: 0 !important;">
@@ -416,38 +437,60 @@
 
       <!-- /////////////////////////////////////////////////////////// -->
       <!-- //// bottom bar ///// -->
-      
-      
       <div class="row m-0 d-flex justify-content-center">
         <div class="bottom-bar col-md-7 col-10">
-          <a href="https://www.alrajhibank.com.sa/Personal/Accounts" class="item">
+          <!-- <a href="https://www.alrajhibank.com.sa/Personal/Accounts" class="item">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" viewBox="0 0 640 512" fill="currentColor" stroke="currentColor" stroke-width="1.5">
               <path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/>
             </svg>
             <span>الحسابات</span>
+          </a> -->
+
+          <a title="Accounts" href="/Personal/Accounts" class="nav-link n-icon d-flex flex-column justify-content-center text-center" style="color: #fff;">
+            <span class="material-symbols-outlined" style="font-size: 25px !important;">supervisor_account</span>
+            <span style="font-size: 18px; font-weight: bold;">الحسابات</span>
           </a>
-      
-          <a href="https://www.alrajhibank.com.sa/Personal/Cards" class="item d-flex flex-column align-items-center">
+          
+                
+          <!-- <a href="https://www.alrajhibank.com.sa/Personal/Cards" class="item d-flex flex-column align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1" class="bi bi-wallet" viewBox="0 0 16 16">
               <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1"/>
             </svg>
             <span>البطاقات</span>
+          </a> -->
+
+          <!-- <span class="material-symbols-outlined">credit_card</span> -->
+          <a title="Accounts" href="/Personal/Accounts" class="nav-link n-icon d-flex flex-column justify-content-center text-center" style="color: #fff;">
+            <span class="material-symbols-outlined" style="font-size: 25px !important;">credit_card</span>
+            <span style="font-size: 18px; font-weight: bold; color: #fff;">البطاقات</span>
           </a>
+          <!-- <a title="Cards" href="/Personal/Cards" class="nav-link n-icon">البطاقات</a> -->
       
-          <a href="https://www.alrajhibank.com.sa/Personal/Finance" class="item active">
+          <!-- <a href="https://www.alrajhibank.com.sa/Personal/Finance" class="item active">
             <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px !important;" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1"  class="bi bi-cash-stack" viewBox="0 0 16 16">
               <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
               <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
             </svg>
             <span style="font-size: 18px !important; font-weight: 500 !important;">التمويل</span>
+          </a> -->
+          <a title="Finance" href="/Personal/Finance" class="nav-link active n-icon d-flex flex-column justify-content-center text-center" style="color: #000000;">
+            <span class="material-symbols-outlined" style="font-size: 25px !important;">payments</span>
+            <span style="font-size: 18px; font-weight: bold;">التمويل</span>
           </a>
+          <!-- <span class="material-symbols-outlined">payments</span> -->
+          <!-- <a title="Finance" href="/Personal/Finance" class="nav-link n-icon"><span class="material-symbols-outlined">payments</span>التمويل</a> -->
       
-          <a href="https://www.alrajhibank.com.sa/Personal/Insurance" class="item">
+          <!-- <a href="https://www.alrajhibank.com.sa/Personal/Insurance" class="item">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1" viewBox="0 0 640 512">
               <path d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5 .8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z"/>
             </svg>
             <span>التأمين</span>
+          </a> -->
+          <a title="Insurance" href="/Personal/Insurance" class="nav-link n-icon d-flex flex-column justify-content-center text-center" style="color: #fff;">
+            <span class="material-symbols-outlined" style="font-size: 25px !important;">admin_panel_settings</span>
+            <span style="font-size: 18px; font-weight: bold;">التأمين</span>
           </a>
+          <!-- <a title="Insurance" href="/Personal/Insurance" class="nav-link n-icon"><span class="material-symbols-outlined">admin_panel_settings</span>التأمين</a> -->
         </div>
       </div>
       
