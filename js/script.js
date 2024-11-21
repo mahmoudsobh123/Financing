@@ -94,3 +94,10 @@ document.querySelector(".search").addEventListener("click", function () {
 //       e.preventDefault(); // هذا يمنع الرابط من الفتح
 //   });
 // });
+
+document.querySelectorAll('.accordion-button').forEach(button => {
+  button.addEventListener('click', function () {
+    const icon = this.querySelector('.toggle-icon');
+    icon.textContent = icon.textContent === '+' ? '-' : '+';
+  });
+});
