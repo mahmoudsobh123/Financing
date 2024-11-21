@@ -37,23 +37,26 @@ header {
     position: fixed !important;
     width: 100%;
     top: 40px;
-    top: 40px;
     left: 0;
-    transition: top 0.3s; /* إضافة تأثير الانتقال للموقع */
+    transition: transform 0.3s ease-in-out; /* تأثير الحركة عند الإخفاء */
   }
 
   #top-link {
-    transition: opacity 0.3s ease-in-out; /* تأكيد الانتقال السلس */
+    transition: opacity 0.3s ease-in-out;
+    position: fixed;
+    top: 0px; /* تأكد من عدم تداخل الرابط مع الهيدر */
+    right: 10px; /* مسافة من اليمين */
+    z-index: 999;
 }
 
 .hide-header {
-    position: relative; /* إذا كان top غير كافٍ */
-    top: -50px; /* قد تحتاج إلى ضبط القيمة */
+  transform: translateY(-80%); /* نقل الهيدر للأعلى */
 }
 
+/* إخفاء الرابط */
 .hide-link {
-    opacity: 0; /* للإخفاء */
-    pointer-events: none; /* لمنع النقر على الرابط */
+  opacity: 0;
+  pointer-events: none;
 }
 
   @media(max-width : 767px){
