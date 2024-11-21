@@ -72,6 +72,7 @@ header {
     header{
         top: 0px;
         padding: 0;
+        transform: translateY(0%) !important;
     }
   }
 
@@ -106,27 +107,23 @@ nav ul li a:hover {
   color: white !important;
 }
 
-/* .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-} */
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-    transition: transform 0.5s ease; /* إضافة تأثير الحركة */
+    transition: transform 0.5s ease; 
 }
 
 .navbar-toggler-icon.change {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M6 24L24 6'/%3e%3c/svg%3e") !important;
 }
 
-/* تأثير الدوران */
 .navbar-toggler-icon.rotate {
     transform: rotate(90deg);
 }
 
-.navbar-toggler:focus {
+/* .navbar-toggler:focus {
     display: none !important;
-}
+} */
 
 .form-section {
   padding: 20px;
