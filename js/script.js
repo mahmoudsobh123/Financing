@@ -74,6 +74,11 @@ window.addEventListener("scroll", function () {
     lastScrollTop = Math.max(scrollTop, 0); // تجنب القيم السالبة
 });
 //////////////////////////////////////////////////////////////////////
+document.querySelector(".search").addEventListener("click", function () {
+  window.location.href = "https://www.alrajhibank.com.sa/SearchCenter#site-search_e=0&site-search_q=";
+});
+
+
 // /////// footer
 // مثال: عند النقر على أي رابط داخل الفوتر، انتقل إلى القسم المطلوب بسلاسة
 // document.querySelectorAll(".footer a").forEach((link) => {
