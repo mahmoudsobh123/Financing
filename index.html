@@ -100,20 +100,21 @@
                     </div>
                 </div>
                 <hr>
-                <div style="display: flex; justify-content: center; margin-top: 20px;">
-                    <button type="submit" class="btn2 btn btn-primary btn-md button-alrajhi-primary" style="background-color: rgb(4, 105, 199);">
+                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                    <button type="submit" class="btn2 btn btn-primary btn-md button-alrajhi-primary mb-2" style="background-color: rgb(4, 105, 199);">
                         التحقق من صحة الوثائق
                     </button>
+                    <p class="error" style="color: red !important;"></p>
                 </div>
             </form>
-            <!-- <p class="ms-auto" style="color: #0087f7; cursor: pointer; font-size: 18px;">انقر هنا لتحميل الملف</p> -->
+            <p class="ms-auto download" style="color: #0087f7; cursor: pointer; font-size: 18px;"></p>
         </section>
         
     </main>
 
     <footer class="footer text-white py-5" style="background-color: #2b2d2ed7 !important;">
         <div class="container">
-          <div class="row">
+          <div class="row d-none d-md-flex">
             <!-- margin-top: -20px !important; -->
             <div class="text-end d-flex" style=" padding-right: 55px;">
                 <img src="images/logo.png" class="mt-1" height="22" width="22">
@@ -181,6 +182,125 @@
             </div>
           </div>
 
+          <!-- ////////// first row in small ////////////// -->
+          <div class="row d-md-none d-block">
+            <!-- margin-top: -20px !important; -->
+            <div class="text-end d-flex" style=" padding-right: 55px;">
+                <img src="images/logo.png" class="mt-1" height="22" width="22">
+                <p class="me-2" style="color: rgb(214, 214, 214) ; font-size: 20px; font-weight: 100;"> > </p>
+                <p class="me-2 ms-2" style="margin-top: 4px !important;"><a href="https://www.alrajhibank.com.sa/Personal" class="footer_link" style="color: rgb(214, 214, 214) ; font-size: 15px; font-weight: 400;">الأفراد</a></p>
+                <p class="me-2" style="color: rgb(214, 214, 214) ; font-size: 20px; font-weight: 100;"> > </p>
+                <p class="me-2 ms-2" style="margin-top: 4px !important;"><a href="https://www.alrajhibank.com.sa/Personal/Finance" class="footer_link" style="color: rgb(214, 214, 214); font-size: 15px; font-weight: 400;">التمويل</a></p>
+            </div>
+          
+            <div class="accordion mb-5" id="footerAccordion">
+                <!-- قسم "الأفراد" -->
+                <div class="accordion-item border-0" style="background-color: transparent !important; outline: 0 !important;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#personalSection" aria-expanded="false" aria-controls="personalSection" style="color: rgb(150, 150, 150) !important;">
+                        الأفراد <span class="toggle-icon me-auto">+</span>
+                    </button>
+                    <hr style="color: #fff !important; margin-top: 5px !important;" >
+                  </h2>
+                  <div id="personalSection" class="accordion-collapse collapse" data-bs-parent="#footerAccordion">
+                    <div class="accordion-body text-end" style="background-color: transparent !important; outline: 0 !important;">
+                      <ul class="list-unstyled">
+                        <li><a href="https://www.alrajhibank.com.sa/Personal/Accounts" class="footer_link" style="color: rgb(211, 209, 209) !important;">الحسابات</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Personal/Cards" class="footer_link" style="color: rgb(211, 209, 209) !important;">البطاقات</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Personal/Finance" class="footer_link" style="color: rgb(211, 209, 209) !important;">التمويل</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Personal/Insurance" class="footer_link" style="color: rgb(211, 209, 209) !important;">التأمين</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Personal/Offers" class="footer_link" style="color: rgb(211, 209, 209) !important;">العروض</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- قسم "الأعمال" -->
+                <div class="accordion-item border-0" style="background-color: transparent !important; outline: 0 !important;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#businessSection" aria-expanded="false" aria-controls="businessSection" style="color: rgb(150, 150, 150) !important;">
+                        الأعمال <span class="toggle-icon me-auto">+</span> 
+                    </button>
+                    <hr style="color: #fff !important;  margin-top: 5px !important;" >
+                  </h2>
+                  <div id="businessSection" class="accordion-collapse collapse" data-bs-parent="#footerAccordion">
+                    <div class="accordion-body text-end" style="background-color: transparent !important; outline: 0 !important;">
+                      <ul class="list-unstyled">
+                        <li><a href="https://www.alrajhibank.com.sa/Business/Cash-Management" class="footer_link" style="color: rgb(211, 209, 209) !important;">إدارة النقد</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Business/Finance" class="footer_link" style="color: rgb(211, 209, 209) !important;">التمويل</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Business/Insurance" class="footer_link" style="color: rgb(211, 209, 209) !important;">التأمين</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Business/Trade" class="footer_link" style="color: rgb(211, 209, 209) !important;">التجارة</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- قسم "عن مصرف الراجحي" -->
+                <div class="accordion-item border-0" style="background-color: transparent !important; outline: 0 !important;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#aboutSection" aria-expanded="false" aria-controls="aboutSection" style="color: rgb(150, 150, 150) !important;">
+                        عن مصرف الراجحي <span class="toggle-icon me-auto">+</span>
+                    </button>
+                    <hr style="color: #fff !important;  margin-top: 5px !important;" >
+                  </h2>
+                  <div id="aboutSection" class="accordion-collapse collapse" data-bs-parent="#footerAccordion">
+                    <div class="accordion-body text-end" style="background-color: transparent !important;">
+                      <ul class="list-unstyled" style="background-color: transparent !important;">
+                        <li><a href="https://www.alrajhibank.com.sa/About-alrajhi-bank" class="footer_link" style="color: rgb(211, 209, 209) !important;">نبذة عن المصرف</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/About-alrajhi-bank/Investor-Relations" class="footer_link" style="color: rgb(211, 209, 209) !important;">علاقات المستثمرين</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/About-alrajhi-bank/Media-Center" class="footer_link" style="color: rgb(211, 209, 209) !important;">المركز الإعلامي</a></li>
+                        <li><a href="https://careers.alrajhibank.com.sa/ar/" class="footer_link" style="color: rgb(211, 209, 209) !important;">الوظائف</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              
+              
+              <!-- قسم "عن الدعم والمساعدة" -->
+              <div class="accordion-item border-0" style="background-color: transparent !important; outline: 0 !important;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#aboutSection2" aria-expanded="false" aria-controls="aboutSection2" style="color: rgb(150, 150, 150) !important;">
+                    الدعم والمساعدة <span class="toggle-icon me-auto">+</span>
+                  </button>
+                  <hr style="color: #fff !important;  margin-top: 5px !important;" >
+                </h2>
+                <div id="aboutSection2" class="accordion-collapse collapse" data-bs-parent="#footerAccordion">
+                  <div class="accordion-body text-end" style="background-color: transparent !important;">
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.alrajhibank.com.sa/-/media/Project/AlrajhiPWS/Shared/Home/Footer/PDFs/Customer-protection-principles-AR.pdf" class="footer_link" style="color: rgb(196, 193, 193) ; font-size: 15px; font-weight: 400;">مبادئ وقواعد حماية العملاء</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Personal/Accounts/Products-and-Services-fees"  class="footer_link" style="color: rgb(211, 209, 209) !important;">التعرفة البنكية</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/submit-your-request" class="footer_link" style="color: rgb(211, 209, 209) !important;">لرفع طلب أو شكوى</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Map-Intro" class="footer_link" style="color: rgb(211, 209, 209) !important;">اعثر على الفرع الأقرب إليك</a></li>
+                        <li><a href="https://www.alrajhibank.com.sa/Personal/Ways-to-bank" class="footer_link" style="color: rgb(211, 209, 209) !important;">قنوات المصرف</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- قسم "عن  الشركات التابعة" -->
+              <div class="accordion-item border-0" style="background-color: transparent !important; outline: 0 !important;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#aboutSection3" aria-expanded="false" aria-controls="aboutSection3" style="color: rgb(150, 150, 150) !important;">
+                    الشركات التابعة <span class="toggle-icon me-auto">+</span>
+                  </button>
+                  <hr style="color: #fff !important;  margin-top: 5px !important;" >
+                </h2>
+                <div id="aboutSection3" class="accordion-collapse collapse" data-bs-parent="#footerAccordion">
+                  <div class="accordion-body text-end" style="background-color: transparent !important;">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://www.alrajhi-capital.com/ar" target="_blank" class="footer_link" style="color: rgb(211, 209, 209) !important;">الراجحي المالية</a></li>
+                        <li class="mb-2"><a href="https://www.alrajhibank.com.jo/ar" target="_blank" class="footer_link" style="color: rgb(211, 209, 209) !important;">مصرف الراجحي الأردن</a></li>
+                        <li class="mb-2"><a href="https://www.alrajhibank.com.kw/ar" target="_blank"  class="footer_link" style="color: rgb(211, 209, 209) !important;">مصرف الراجحي الكويت</a></li>
+                        <li class="mb-2"><a href="https://www.alrajhibank.com.my/" target="_blank" class="footer_link" style="color: rgb(211, 209, 209) !important;">مصرف الراجحي ماليزيا</a></li>
+                        <li class="mb-2"><a href="https://www.tahweelalrajhi.com.sa/about-us" target="_blank" class="footer_link" style="color: rgb(211, 209, 209) !important;">تحويل الراجحي</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
           <!-- /////// Another Row //////// -->
           <div class="row m-0 d-flex justify-content-between align-items-center">
             <div class="col-md-3 ms-auto d-md-block d-none">
@@ -220,7 +340,7 @@
                 <span style="font-size: 17px; font-weight: 600; color: rgb(218, 214, 214);">8001244455</span>
             </div>
 
-            <div class="col-md-4 ms-auto d-flex social col-12">
+            <div class="col-md-4 ms-auto d-flex social col-12 ">
                 <a href="https://x.com/intent/post?url=alrajhibank.com.sa" target="_blank" class="text-white mx-2 twiter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></a>
                 <a href="https://www.facebook.com/alrajhibank" target="_blank" class="text-white mx-2 facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/alrajhibank/" target="_blank" class="text-white mx-2 instram"><i class="fab fa-instagram fa-lg"></i></a>
@@ -229,6 +349,16 @@
                 <a href="https://www.tiktok.com/@alrajhibank?_t=8gudyarlVqM&_r=1" target="_blank" class="text-white mx-2"><i class="fab fa-tiktok"></i></a>
             </div>
 
+            <style>
+                /* توسيط الأيقونات الاجتماعية في الشاشات الصغيرة */
+                @media (max-width: 768px) {
+                  .social {
+                    justify-content: center !important;
+                    text-align: center !important;
+                  }
+                }
+              </style>
+              
              <!-- /////// Another Row //////// -->
                 <div class=" mx-0 my-3 mp-5 col-md-10 d-flex flex-wrap align-items-center justify-content-center ">
                     <a href="https://www.alrajhibank.com.sa/digitallab/index_ar.html" target="_blank" class="ms-2 text-decoration-none" style="font-size: 14px; color: rgb(218, 214, 214); border-left: 1px solid rgb(197, 197, 197); padding: 1px 4px; margin: 5px 0;">المركز الرقمي</a>
@@ -252,23 +382,23 @@
           </div>
 
           <!-- /////// Another Row //////// -->
-        <div class="row mx-0 mt-4">
-          <div class="d-flex justify-content-evenly align-items-center" style="flex-wrap: wrap !important;">
-              <a class="col-md-2 col-6" href="https://www.alrajhibank.com.sa/About-alrajhi-bank/Corporate-Social-Responsibility" target="_blank"><img src="images/our_duty.png"></a>
-              <a class="col-md-2 col-6" href="https://loyalty.alrajhibank.com.sa/" target="_blank"><img src="images/mokafaa.png"></a>
-              <a class="col-md-2 col-6" href="https://www.alrajhi-capital.com/ar/" target="_blank"><img src="images/alrajhi_capital.png"></a>
-              <a class="col-md-2 col-6" href="https://www.tahweelalrajhi.com.sa/ar" target="_blank"><img src="images/Tahweel logo-01.png"></a>
-              <a class="col-md-2 col-6" href="https://www.tawtheeqco.com.sa/" target="_blank"><img src="images/tawtheeq_w.png"></a>
-          </div>
-          <div class="d-flex justify-content-evenly align-items-center" style="flex-wrap: wrap !important;">
-              <a class="col-md-2 col-6" href="https://www.emkanfinance.com.sa/ar" target="_blank"><img src="images/emk_w.png"></a>
-              <a class="col-md-2 col-6" href="https://www.urpay.com.sa/" target="_blank"><img src="images/urpay.png"></a>
-              <a class="col-md-2 col-6" href="https://www.neoleap.com.sa/" target="_blank"><img src="images/neo_leap_w.png"></a>
-              <a class="col-md-2 col-6" href="https://tanfeethco.sa/ar" target="_blank"><img src="images/tanfeeth_w.png"></a>
-              <a class="col-md-2 col-6" href="" target="_blank"><img src="images/tuder.png"></a>
-              <a class="col-md-2 col-6" href="https://www.ejada.com/" target="_blank"><img src="images/ejada.png"></a>
-          </div>
-        </div>
+          <div class="row mx-0 mt-4" style="overflow-x: hidden;">
+            <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.alrajhibank.com.sa/About-alrajhi-bank/Corporate-Social-Responsibility" target="_blank"><img src="images/our_duty.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://loyalty.alrajhibank.com.sa/" target="_blank"><img src="images/mokafaa.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.alrajhi-capital.com/ar/" target="_blank"><img src="images/alrajhi_capital.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.tahweelalrajhi.com.sa/ar" target="_blank"><img src="images/Tahweel logo-01.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.tawtheeqco.com.sa/" target="_blank"><img src="images/tawtheeq_w.png" class="img-fluid"></a>
+            </div>
+            <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.emkanfinance.com.sa/ar" target="_blank"><img src="images/emk_w.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.urpay.com.sa/" target="_blank"><img src="images/urpay.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.neoleap.com.sa/" target="_blank"><img src="images/neo_leap_w.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://tanfeethco.sa/ar" target="_blank"><img src="images/tanfeeth_w.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="" target="_blank"><img src="images/tuder.png" class="img-fluid"></a>
+                <a class="col-md-2 col-5 px-2 mb-3" href="https://www.ejada.com/" target="_blank"><img src="images/ejada.png" class="img-fluid"></a>
+            </div>
+          </div>          
 
          <!-- /////// Another Row //////// -->
          <div class="row mx-0 mt-4 d-flex justify-content-end">
@@ -286,38 +416,54 @@
 
       <!-- /////////////////////////////////////////////////////////// -->
       <!-- //// bottom bar ///// -->
-      <div class="row m-0 d-flex justify-content-center">
-      <div class="bottom-bar col-md-7 col-10">
-          <a href="https://www.alrajhibank.com.sa/Personal/Accounts" class="item">
-              <svg xmlns="http://www.w3.org/2000/svg"  width="35" height="25" viewBox="0 0 640 512" fill="currentColor" stroke="currentColor" stroke-width="1.5"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/>
-              </svg>
-             <span>الحسابات</span>
-          </a>
-
-          <a href="https://www.alrajhibank.com.sa/Personal/Cards" class="item d-flex flex-column align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1" class="bi bi-wallet" viewBox="0 0 16 16">
-                <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1"/>
-              </svg>
-              <span>البطاقات</span>
-          </a>
-
-          <a href="https://www.alrajhibank.com.sa/Personal/Finance" class="item active">
-              <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px !important;" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1"  class="bi bi-cash-stack" viewBox="0 0 16 16">
-                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
-                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
-              </svg>
-              <span style="font-size: 18px !important; font-weight: 500 !important;">التمويل</span>
-          </a>
-
-        <a href="https://www.alrajhibank.com.sa/Personal/Insurance" class="item">
-            <svg xmlns="http://www.w3.org/2000/svg"  width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1"  viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5 .8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z"/></svg>
-            <span>التأمين</span>
-        </a>
-
-    </div>
-</div>
       
+      
+      <div class="row m-0 d-flex justify-content-center">
+        <div class="bottom-bar col-md-7 col-10">
+          <a href="https://www.alrajhibank.com.sa/Personal/Accounts" class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" viewBox="0 0 640 512" fill="currentColor" stroke="currentColor" stroke-width="1.5">
+              <path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/>
+            </svg>
+            <span>الحسابات</span>
+          </a>
+      
+          <a href="https://www.alrajhibank.com.sa/Personal/Cards" class="item d-flex flex-column align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1" class="bi bi-wallet" viewBox="0 0 16 16">
+              <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1"/>
+            </svg>
+            <span>البطاقات</span>
+          </a>
+      
+          <a href="https://www.alrajhibank.com.sa/Personal/Finance" class="item active">
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px !important;" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1"  class="bi bi-cash-stack" viewBox="0 0 16 16">
+              <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+              <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
+            </svg>
+            <span style="font-size: 18px !important; font-weight: 500 !important;">التمويل</span>
+          </a>
+      
+          <a href="https://www.alrajhibank.com.sa/Personal/Insurance" class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" fill="currentColor" stroke="currentColor" stroke-width="1" viewBox="0 0 640 512">
+              <path d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5 .8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z"/>
+            </svg>
+            <span>التأمين</span>
+          </a>
+        </div>
+      </div>
+      
+      <style>
+        /* تصغير حجم الأيقونات على الشاشات الصغيرة */
+        @media (max-width: 576px) {
+          .bottom-bar svg {
+            width: 25px;
+            height: 18px;
+          }
+      
+          .bottom-bar span {
+            font-size: 14px !important; /* تصغير حجم النص */
+          }
+        }
+      </style>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
