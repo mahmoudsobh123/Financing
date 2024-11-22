@@ -286,7 +286,7 @@ li a {
   /* font-weight: lighter; */
   /* font-weight: inherit; */
 }
-.bottom-bar .item:hover {
+.bottom-bar a:hover, .bottom-bar span:hover {
 color: #000 !important;
 }
 .bottom-bar .item svg , .bottom-bar .item a {
