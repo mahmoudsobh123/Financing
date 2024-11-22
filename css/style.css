@@ -176,7 +176,7 @@ h2 {
   color: rgb(77, 76, 76);
   font-size: 17px;
 }
-@media (max-width: 406px) {
+@media (max-width: 767px) {
   .form-group input {
     padding: 0.5em 1.7em;
   }
